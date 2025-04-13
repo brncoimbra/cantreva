@@ -1,0 +1,94 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    red 5%,
+    orange 20%,
+    yellow 30%,
+    green 50%,
+    blue 80%,
+    purple 100%
+  );
+}
+
+/* Container com flexbox para imagem à esquerda e conteúdo à direita */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Imagem à esquerda, com tamanho ajustado */
+.cantreva-img {
+  width: 150px; /* tamanho reduzido */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #1b1b1b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin-right: 2rem; /* espaço entre a imagem e o texto */
+}
+
+/* Conteúdo à direita */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Texto */
+h1 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.counter-text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Botão estilizado */
+.button {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #1b1b1b;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #3f3f3f;
+  transform: scale(1.05);
+}
+
+.button:focus,
+.button:focus-visible,
+.button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Grupo horizontal */
+.horizontal-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
